@@ -202,7 +202,7 @@ print(all_posts_by_date['hour_of_day'].value_counts().sort_index())
 
 # Finally, let's store the results we've obtained so far. The simplest and most 
 # portable format is usually a plain csv file (just stay away from MS Excel). 
-all_posts_by_date.to_csv("posts-python.csv", index=False)
+all_posts_by_date.to_csv("data/posts-python.csv", index=False)
 
 # You may have noticed we've only selected a few fields from the post objects to 
 # include in our dataframe. The original posts contain more data for authors, replies,
@@ -214,9 +214,9 @@ all_posts_by_date.to_csv("posts-python.csv", index=False)
 # be harder to read in a future where Python is no longer maintained, or transport 
 # to other software.
 # Pickle format (preserves Python objects)
-all_posts_by_date.to_pickle("posts-python.pkl")
+all_posts_by_date.to_pickle("data/posts-python.pkl")
 
 # Or we could use a more portable format that can represent nested data and is easy 
 # to read and write in many programming languages, but is harder to use than a flat
 # data format. 
-all_posts_by_date.to_json("posts-python.json", orient="records", indent=2)
+all_posts_by_date.to_json("data/posts-python.json", orient="records", indent=2)

@@ -146,7 +146,7 @@ posts <- posts |>
 
 # Finally, let's store the results we've obtained so far. The simplest and most 
 # portable format is usually a plain csv file (just stay away from MS Excel). 
-write_csv(posts, "posts.csv")
+write_csv(posts, "data/posts.csv")
 
 # You may have noticed that some of the results were still nested. For example, 
 # there was more data for authors, posts, embeds, tags, mentions, etc.. When we 
@@ -155,8 +155,8 @@ write_csv(posts, "posts.csv")
 # If we were interested in this data (we're not in this case), we could have used 
 # a binary format to fully represent the data 'object' as R sees it, but which may be 
 # harder to read in a future where R is no longer maintained.
-write_rds(posts, file = "posts.rds")
+write_rds(posts, file = "data/posts.rds")
 
 # Or use a format that can handle nested data structures, but still cannot fully
 # represent all details of the data, and may be harder to use in other software.
-jsonlite::write_json(posts, "posts.json")
+jsonlite::write_json(posts, "data/posts.json")

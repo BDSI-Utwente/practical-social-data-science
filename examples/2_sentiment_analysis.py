@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # we created a dataset of winter olympic games related posts in the
 # previous step. Load the file if necessary.
-posts = pd.read_csv("posts-python.csv")
+posts = pd.read_csv("data/posts-python.csv")
 
 # Select relevant columns
 posts = posts[["uri", "since", "text"]].copy()

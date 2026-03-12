@@ -5,10 +5,10 @@ library(textdata)
 
 # we created a dataset of winter olympic games related posts in the 
 # previous step. Load the file if necessary.
-posts <- read_csv("posts.csv") 
+posts <- read_csv("data/posts.csv") 
 
 # or if - like me - you are easily entertained by punny names...
-posts <- vroom::vroom("posts.csv")
+posts <- vroom::vroom("data/posts.csv")
 
 # let's take only the columns we'll need
 post_texts <- posts |> select(uri, day = since, timestamp = indexed_at, text)
@@ -26,7 +26,7 @@ post_texts <- posts |> select(uri, day = since, timestamp = indexed_at, text)
 tokens <- tidytext::unnest_tokens(post_texts, word, text)
 tokens
 
-# get the sentiment 'lexicon'  
+# get a sentiment 'lexicon'  
 sentiment <- tidytext::get_sentiments("afinn")
 sentiment
 
