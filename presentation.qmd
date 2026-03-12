@@ -1,0 +1,72 @@
+---
+title: "Social media research in practice: a hands-on introduction"
+author: 
+    name: Karel Kroeze
+    email: k.a.kroeze@utwente.nl
+format: revealjs
+embed-resources: true
+---
+
+## Overview 
+
+- Identifying sources
+- Data acquisition
+- Data exploration
+- Analysis
+
+
+## Identifying sources
+### Not all social media are equal
+
+- Target audience
+- Type of media
+- Ease of access 
+
+
+## Identifying sources
+### Target audience
+
+![](assets/pew_user_share_us.png)
+
+
+## Identifying sources
+### Target audience
+
+![](assets/socials_by_generation.png)
+
+
+## Identifying sources
+### Target audience
+
+![](assets/pew_user_share_us_by_demographics.png)
+
+
+## Identifying sources
+### Type of media
+
+- text/image/video
+- short form/long form
+
+
+## Identifying sources
+### Ease of access
+
+- API availability/cost
+- gated content
+- media types
+
+
+## Practical social data science
+### Sentiment over time surrounding the 2026 Winter Olympics
+
+Download the example code and data: 
+
+<https://github.com/bdsi-utwente/practical-social-data-science>
+
+
+
+
+
+Feel free to change the research question!
+
+
